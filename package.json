@@ -1,0 +1,23 @@
+{
+  "name": "qcfb-urlshortener",
+  "version": "1.0.0",
+  "description": "URL shortener API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quanchifootball/qcfb-urlshortener.git"
+  },
+  "author": "quanchifootball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quanchifootball/qcfb-urlshortener/issues"
+  },
+  "homepage": "https://github.com/quanchifootball/qcfb-urlshortener#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30"
+  }
+}
