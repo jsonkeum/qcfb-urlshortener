@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <meta name="description" content="An API to generate short url code">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container-fluid" id="app">
+        <div id="header">
+            <h1 class="text-center">URL Shortener API</h1>
+            <p class="text-right">by QuanchiFootball</p>
+        </div>
+        <br>
+        <p>
+            This is a simple API that will intake any url and generate a four digit shortcut code.
+        </p>
+        <br>
+        <h4>Example</h4>
+        <p>Generating a new short code :</p>
+        <div class="well container blackbox">
+            https://qcfb-urlshortener.glitch.me/new/https://www.facebook.com
+        </div>
+        <p>Returns :</p>
+        <div class="well container blackbox">
+            {
+          <br>
+          "originalurl":"https://www.facebook.com",
+          <br>
+            "shortcut":"https://qcfb-urlshortener.glitch.me/1234"
+          <br>
+          }
+        </div>
+        <p>
+          New URL inputs must include the appropriate protocol (http://, https://, or ftp://) or else the output object will return an error message.
+        </p>
+        <br>
+        <p>Shortcut code usage :</p>
+        <div class="well container blackbox">
+            https://qcfb-urlshortener.glitch.me/1234
+        </div>
+        <footer>
+            <em>I wrote this API as part of FreeCodeCamp's Back-end development curriculum.<br>
+            Check out the source on my <a href="https://quanchifootball.github.io" target="_blank">Github page</a></em>
+        </footer>
+    </div>
+  </body>
+</html>
